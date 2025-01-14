@@ -56,6 +56,8 @@ Example response:
   { "id": 2, "name": "Smartphone", "price": 699 }
 ]
 
+````
+
 2. Fetch a Single Product
 GET /api/products/:id
 Returns a single product by ID.
@@ -65,6 +67,8 @@ Example response:
 ```json
 
 { "id": 1, "name": "Laptop", "price": 999 }
+
+```
 
 3. Add a New Product
 POST /api/products
@@ -78,6 +82,9 @@ Request Body:
   "name": "Tablet",
   "price": 299
 }
+
+```
+
 Response:
 
 ```json
@@ -87,6 +94,8 @@ Response:
   "name": "Tablet",
   "price": 299
 }
+
+```
 
 4. Update a Product
 PUT /api/products/:id
@@ -100,6 +109,9 @@ Request Body:
   "name": "Updated Laptop",
   "price": 1099
 }
+
+```
+
 Response:
 
 ```json
@@ -109,6 +121,8 @@ Response:
   "name": "Updated Laptop",
   "price": 1099
 }
+
+```
 
 5. Delete a Product
 DELETE /api/products/:id
@@ -122,3 +136,4 @@ Response:
   "message": "Product deleted"
 }
 
+```
