@@ -49,28 +49,30 @@ Returns a list of all products.
 
 Example response:
 
-json
+```json
 
 [
   { "id": 1, "name": "Laptop", "price": 999 },
   { "id": 2, "name": "Smartphone", "price": 699 }
 ]
+
 2. Fetch a Single Product
 GET /api/products/:id
 Returns a single product by ID.
 
 Example response:
 
-json
+```json
 
 { "id": 1, "name": "Laptop", "price": 999 }
+
 3. Add a New Product
 POST /api/products
 Adds a new product.
 
 Request Body:
 
-json
+```json
 
 {
   "name": "Tablet",
@@ -78,20 +80,21 @@ json
 }
 Response:
 
-json
+```json
 
 {
   "id": 4,
   "name": "Tablet",
   "price": 299
 }
+
 4. Update a Product
 PUT /api/products/:id
 Updates an existing product by ID.
 
 Request Body:
 
-json
+```json
 
 {
   "name": "Updated Laptop",
@@ -99,20 +102,21 @@ json
 }
 Response:
 
-json
+```json
 
 {
   "id": 1,
   "name": "Updated Laptop",
   "price": 1099
 }
+
 5. Delete a Product
 DELETE /api/products/:id
 Deletes a product by ID.
 
 Response:
 
-json
+```json
 
 {
   "message": "Product deleted"
